@@ -1,0 +1,11 @@
+box: python:3.4-slim
+
+build:
+
+  steps:
+    - script:
+        name: test
+        code: |
+          python setup.py install
+          python bocco/models.py
+
